@@ -1,0 +1,339 @@
+{
+  "framework": "TANGO-PLUS",
+  "version": "1.0.0",
+  "description": "Systematic startup validation methodology combining principles from Thiel, Abraham, Naval, Graham, Bier, and Willison",
+  "repository": "https://github.com/ghettoeinstein/tango-plus-framework",
+  "license": "MIT",
+
+  "contributors": [
+    {
+      "name": "Peter Thiel",
+      "symbol": "🔺",
+      "focus": "Category creation, monopoly position",
+      "principle": "Start with a small market you can dominate",
+      "quote": "Competition is for losers. If you want to create and capture lasting value, look to build a monopoly."
+    },
+    {
+      "name": "Jay Abraham",
+      "symbol": "📈",
+      "focus": "Authority positioning, client value",
+      "principle": "Position as trusted authority, not vendor",
+      "quote": "If you truly believe that what you have is useful and valuable to your clients, then you have a moral obligation to try to serve them in every way possible."
+    },
+    {
+      "name": "Naval Ravikant",
+      "symbol": "💰",
+      "focus": "Leveraged systems, permissionless growth",
+      "principle": "Seek business models with zero marginal cost",
+      "quote": "Code and media are permissionless leverage. They're the leverage behind the newly rich."
+    },
+    {
+      "name": "Paul Graham",
+      "symbol": "🧪",
+      "focus": "User validation, iterative development",
+      "principle": "Make something people want",
+      "quote": "The way to get startup ideas is not to try to think of startup ideas. It's to look for problems, preferably problems you have yourself."
+    },
+    {
+      "name": "Nikit Bier",
+      "symbol": "💡",
+      "focus": "Paradigm disruption, exponential growth",
+      "principle": "Identify and invert limiting industry assumptions",
+      "quote": "The most valuable businesses redefine the rules of their category rather than competing within existing constraints."
+    },
+    {
+      "name": "Simon Willison",
+      "symbol": "⚡",
+      "focus": "Rapid prototyping, expertise amplification",
+      "principle": "Accelerate development cycles through appropriate tools",
+      "quote": "The biggest advantage is speed of development. It's not about getting work done faster, it's about being able to ship projects that I wouldn't have been able to justify spending time on at all."
+    }
+  ],
+
+  "components": [
+    {
+      "name": "Category Creation Validation",
+      "symbol": "🔺",
+      "description": "Validating the creation of a new market category with a monopolistic position",
+      "elements": [
+        "Contrarian Truth Assessment",
+        "Industry Paradigm Disruption",
+        "Category Concept Validation",
+        "Rapid Category Prototyping"
+      ]
+    },
+    {
+      "name": "Product Strategy Validation",
+      "symbol": "🛠️",
+      "description": "Validating that the product solves a real problem and creates significant value",
+      "elements": [
+        "Core Value Determination",
+        "Value Multiplication",
+        "Development Acceleration",
+        "User Outcome Metrics"
+      ]
+    },
+    {
+      "name": "Leverage Systems Validation",
+      "symbol": "💪",
+      "description": "Validating the leverage mechanisms that enable exponential rather than linear growth",
+      "elements": [
+        "Code Leverage",
+        "Capital Leverage",
+        "Paradigm Leverage",
+        "Acceleration Leverage"
+      ]
+    },
+    {
+      "name": "Marketing Strategy Validation",
+      "symbol": "📣",
+      "description": "Validating positioning, messaging, and conversion approaches",
+      "elements": [
+        "Authority Positioning",
+        "Contrast Creation",
+        "Mental Model Disruption",
+        "Marketing Experimentation"
+      ]
+    }
+  ],
+
+  "formulas": {
+    "MVP": {
+      "formula": "f(CoreValue, UserPain, MinimalFeatures)",
+      "description": "Minimum Viable Product is a function of core value delivered, user pain resolved, and minimal feature set",
+      "variables": {
+        "CoreValue": "The primary value proposition of the solution",
+        "UserPain": "The intensity and frequency of the customer problem",
+        "MinimalFeatures": "The smallest set of features required to deliver the core value"
+      },
+      "calculation": "Qualitative assessment scored 1-10 for each variable, multiplied together, divided by 10",
+      "threshold": "MVP Score > 60 indicates viable product concept"
+    },
+
+    "PMF": {
+      "formula": "Σ(UserEngagement, Retention, Referral, Disappointment)",
+      "description": "Product-Market Fit is the sum of user engagement metrics, retention rates, referral rates, and disappointment if removed",
+      "variables": {
+        "UserEngagement": "Frequency and depth of product usage (0-10)",
+        "Retention": "Percentage of users who remain active after 30 days (0-1)",
+        "Referral": "Net Promoter Score or referral rate (0-10)",
+        "Disappointment": "User reported disappointment if product disappeared (0-10)"
+      },
+      "calculation": "(UserEngagement * 0.25) + (Retention * 25) + (Referral * 0.25) + (Disappointment * 0.25)",
+      "threshold": "PMF Score > 7 indicates strong product-market fit"
+    },
+
+    "CAC_LTV": {
+      "formula": "CAC < LTV/3",
+      "description": "Customer Acquisition Cost should be less than one-third of Customer Lifetime Value for a viable acquisition model",
+      "variables": {
+        "CAC": "Total marketing and sales costs / Number of new customers",
+        "LTV": "Average revenue per customer * Gross margin * Average customer lifespan"
+      },
+      "calculation": "CAC / (LTV/3) < 1.0 indicates viable acquisition economics",
+      "threshold": "Ratio < 0.8 preferred for sustainable growth"
+    },
+
+    "Growth": {
+      "formula": "InitialTraction × Virality^t × Retention",
+      "description": "Growth compounds based on initial traction, virality coefficient, and retention rate over time",
+      "variables": {
+        "InitialTraction": "Base number of users/customers",
+        "Virality": "K-factor, number of new users each existing user brings (> 1 for viral growth)",
+        "t": "Time periods (weeks/months)",
+        "Retention": "Percentage of users retained each period (0-1)"
+      },
+      "calculation": "InitialTraction * (Virality^t) * (Retention^t)",
+      "threshold": "Virality > 1.1 and Retention > 0.85 indicates sustainable growth"
+    },
+
+    "Monopoly": {
+      "formula": "CategoryCreation + 10xValue + NetworkEffects",
+      "description": "Monopoly position strength is a function of category creation, 10x value delivery, and network effects",
+      "variables": {
+        "CategoryCreation": "Degree to which you've created a new category (0-10)",
+        "10xValue": "Factor by which your solution is better than alternatives on key dimension (1-10)",
+        "NetworkEffects": "Strength of network effects in your business model (0-10)"
+      },
+      "calculation": "(CategoryCreation * 0.4) + (10xValue * 0.3) + (NetworkEffects * 0.3)",
+      "threshold": "Monopoly Score > 7 indicates strong defensible position"
+    },
+
+    "MarketingROI": {
+      "formula": "(Revenue - MarketingCost) / MarketingCost",
+      "description": "Return on investment for marketing activities",
+      "variables": {
+        "Revenue": "Revenue directly attributable to marketing activities",
+        "MarketingCost": "Total cost of marketing campaigns and activities"
+      },
+      "calculation": "(Revenue - MarketingCost) / MarketingCost",
+      "threshold": "MROI > 3.0 indicates effective marketing"
+    },
+
+    "ExponentialValue": {
+      "formula": "InitialValue × CompoundingRate^t",
+      "description": "Value creation that compounds exponentially over time",
+      "variables": {
+        "InitialValue": "Starting value delivered",
+        "CompoundingRate": "Rate at which value compounds (> 1)",
+        "t": "Time periods (months/years)"
+      },
+      "calculation": "InitialValue * (CompoundingRate^t)",
+      "threshold": "CompoundingRate > 1.2 indicates exponential value creation"
+    },
+
+    "ValidationScore": {
+      "formula": "(ProblemValidation + SolutionValidation + MarketValidation + BusinessModelValidation) / 4",
+      "description": "Overall validation score across four key dimensions",
+      "variables": {
+        "ProblemValidation": "Evidence that the problem exists and is painful (0-10)",
+        "SolutionValidation": "Evidence that the solution resolves the problem effectively (0-10)",
+        "MarketValidation": "Evidence that enough people have this problem to support a business (0-10)",
+        "BusinessModelValidation": "Evidence that customers will pay enough to create a viable business (0-10)"
+      },
+      "calculation": "(ProblemValidation + SolutionValidation + MarketValidation + BusinessModelValidation) / 4",
+      "threshold": "ValidationScore > 7 indicates a well-validated concept"
+    },
+
+    "DefensibilityIndex": {
+      "formula": "0.3(IP) + 0.3(NE) + 0.2(SC) + 0.2(BR)",
+      "description": "Measure of business defensibility across multiple dimensions",
+      "variables": {
+        "IP": "Intellectual Property strength (0-10)",
+        "NE": "Network Effects strength (0-10)",
+        "SC": "Switching Costs (0-10)",
+        "BR": "Brand Recognition (0-10)"
+      },
+      "calculation": "(0.3 * IP) + (0.3 * NE) + (0.2 * SC) + (0.2 * BR)",
+      "threshold": "DefensibilityIndex > 6 indicates strong defensibility"
+    },
+
+    "CategoryClarity": {
+      "formula": "0.4(CT) + 0.3(CD) + 0.3(CP)",
+      "description": "Clarity and effectiveness of category creation",
+      "variables": {
+        "CT": "Contrarian Truth strength (0-10)",
+        "CD": "Category Definition clarity (0-10)",
+        "CP": "Category Positioning uniqueness (0-10)"
+      },
+      "calculation": "(0.4 * CT) + (0.3 * CD) + (0.3 * CP)",
+      "threshold": "CategoryClarity > 7 indicates effective category creation"
+    }
+  },
+
+  "mvt_tasks": [
+    {
+      "task": "Define category name and core positioning statement (10 words or less)",
+      "priority": 1,
+      "timeframe": "Week 1",
+      "validation_method": "Expert review and customer interviews"
+    },
+    {
+      "task": "Create contrarian truth one-pager with supporting evidence",
+      "priority": 2,
+      "timeframe": "Week 1",
+      "validation_method": "Industry expert feedback and customer reaction"
+    },
+    {
+      "task": "Develop 3 clear problem statements from customer interviews",
+      "priority": 3,
+      "timeframe": "Week 2",
+      "validation_method": "Minimum 10 customer interviews with consistent patterns"
+    },
+    {
+      "task": "Build authority-building content roadmap (3-month plan)",
+      "priority": 4,
+      "timeframe": "Week 2",
+      "validation_method": "Engagement metrics on initial content pieces"
+    },
+    {
+      "task": "Design conversion funnel with clear stage definitions",
+      "priority": 5,
+      "timeframe": "Week 3",
+      "validation_method": "Conversion rate estimates and early testing"
+    },
+    {
+      "task": "Create risk-reversal mechanism for early adopters",
+      "priority": 6,
+      "timeframe": "Week 3",
+      "validation_method": "Conversion rate impact testing"
+    },
+    {
+      "task": "Define viral loop mechanic in product/marketing",
+      "priority": 7,
+      "timeframe": "Week 4",
+      "validation_method": "K-factor calculation from early tests"
+    },
+    {
+      "task": "Establish key metrics dashboard for marketing validation",
+      "priority": 8,
+      "timeframe": "Week 4",
+      "validation_method": "Data accuracy verification"
+    },
+    {
+      "task": "Develop systematic A/B testing protocol for messaging",
+      "priority": 9,
+      "timeframe": "Week 5",
+      "validation_method": "Statistical significance of early tests"
+    },
+    {
+      "task": "Create client outcome documentation process",
+      "priority": 10,
+      "timeframe": "Week 6",
+      "validation_method": "Client feedback quality assessment"
+    }
+  ],
+
+  "validation_scoring": {
+    "components": [
+      {
+        "name": "Problem Validation",
+        "max_score": 10,
+        "questions": [
+          "Is the problem real and painful?",
+          "Is the problem frequent enough?",
+          "Are customers actively seeking solutions?",
+          "Is the problem growing in importance?",
+          "Is the problem clearly articulated?"
+        ]
+      },
+      {
+        "name": "Solution Validation",
+        "max_score": 10,
+        "questions": [
+          "Does the solution effectively solve the problem?",
+          "Is the solution 10x better on at least one dimension?",
+          "Is the solution easy to adopt?",
+          "Does the solution create demonstrable results?",
+          "Is the solution scalable?"
+        ]
+      },
+      {
+        "name": "Market Validation",
+        "max_score": 10,
+        "questions": [
+          "Is the market large enough?",
+          "Is the initial market segment clearly defined?",
+          "Is the market growing?",
+          "Can we reach customers efficiently?",
+          "Are there few or weak competitors?"
+        ]
+      },
+      {
+        "name": "Business Model Validation",
+        "max_score": 10,
+        "questions": [
+          "Will customers pay enough?",
+          "Are acquisition costs sustainable?",
+          "Does the model have strong unit economics?",
+          "Is there potential for high margins?",
+          "Is there a clear path to scaling revenue?"
+        ]
+      }
+    ],
+    "total_score": 40,
+    "minimum_viable_score": 28
+  },
+
+  "prompt": "Create a validation plan for [MY STARTUP] using the TANGO-PLUS framework. Analyze the potential for category creation, identify the contrarian truth, and design a minimum viable product that addresses a painful problem. Include specific validation metrics and experiments for testing core assumptions across all four validation quadrants: category creation, product strategy, leverage systems, and marketing strategy. Develop a 6-week roadmap prioritizing MVT tasks, with emphasis on rapid prototyping and evidence-based iteration. Calculate preliminary scores using the framework formulas and conclude with an action plan prioritizing critical validation tasks."
+}
